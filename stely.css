@@ -1,3 +1,6 @@
+:root {
+  --transition: all 0.45s ease;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -16,23 +19,16 @@
   width: 100%;
   flex-wrap: wrap;
   overflow: hidden;
-  align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
 }
 
 .screenshot {
-  z-index: 200;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 320px;
   height: 200px;
   background-size: cover;
   border-radius: 8px 8px 0 0;
-  overflow: hidden;
   backface-visibility: hidden;
-  transition: all 0.45s ease;
+  transition: var(--transition);
 }
 
 .content {
@@ -46,13 +42,13 @@ h1.title {
   margin-bottom: 4px;
   font-size: 1.25em;
   font-weight: 500;
-  transition: all 0.45s ease;
+  transition: var(--transition);
 }
 
 p.description {
   display: block;
   color: rgb(0, 0, 0, 0.7);
-  transition: all 0.45s ease;
+  transition: var(--transition);
   transition-delay: 0.04s;
 }
 
@@ -63,7 +59,7 @@ p.description {
   width: 100%;
   height: 10px;
   border-radius: 0 0 8px 8px;
-  transition: all 0.45s ease;
+  transition: var(--transition);
 }
 
 .style {
@@ -78,7 +74,7 @@ p.description {
   cursor: pointer;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12),
     0 20px 20px -10px rgba(0, 0, 0, 0.125);
-  transition: all 0.45s ease;
+  transition: var(--transition);
 }
 .style:hover {
   transform: scale(1.04);
@@ -104,9 +100,6 @@ p.description {
   transform: translateY(4px) scale(0.92);
   opacity: 0.7;
   border-radius: 6px;
-}
-.style:hover .screenshot ::before {
-  background: rgba(0, 0, 0, 0.1);
 }
 
 a:link {
@@ -142,28 +135,6 @@ p.p_color {
   border-left-width: 0;
   border-bottom-width: 0;
 }
-strong {
-  color: black;
-  font-weight: 600;
-}
-
-h1.heading_black {
-  font-size: 50px;
-  text-align: left;
-  font-family: Poppins, sans-serif;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: rgb(0, 0, 0);
-}
-
-p.p_color_black {
-  margin-bottom: 0;
-  text-align: left;
-  line-height: 1.2;
-  color: rgba(0, 0, 0, 0.55);
-  font-family: Poppins, sans-serif;
-  font-size: 18px;
-}
 
 .wrapper {
   display: inline-flex;
@@ -174,7 +145,6 @@ p.p_color_black {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 15px;
   margin: 10px;
   width: 50px;
   height: 50px;
@@ -182,8 +152,6 @@ p.p_color_black {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   color: rgb(0, 0, 0);
 }
@@ -200,6 +168,7 @@ p.p_color_black {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  white-space: nowrap;
 }
 
 .wrapper .tooltip::before {
@@ -219,6 +188,7 @@ p.p_color_black {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  white-space: nowrap;
 }
 
 .wrapper .icon:hover span,
@@ -229,7 +199,7 @@ p.p_color_black {
 .wrapper .google:hover,
 .wrapper .google:hover .tooltip,
 .wrapper .google:hover .tooltip::before {
-  background: #1877f2;
+  background: #fa0606;
   color: #ffffff;
 }
 .wrapper .whatsapp:hover,
@@ -239,6 +209,12 @@ p.p_color_black {
   color: #ffffff;
 }
 
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #2d75ea;
+  color: #ffffff;
+}
 .contact {
   display: flex;
   flex-direction: column;
