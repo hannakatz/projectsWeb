@@ -130,7 +130,8 @@ p.p_color {
   font-size: 18px;
 }
 .underline {
-  width: 849px;
+  max-width: 849px;
+  width: 74%;
   height: 3px;
   transform-origin: left center;
   margin: 24px auto 0;
@@ -184,6 +185,7 @@ p.p_color_black {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: rgb(0, 0, 0);
 }
 
 .wrapper .tooltip {

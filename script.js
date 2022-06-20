@@ -35,7 +35,7 @@ const data = [
   },
   {
     Title: "Chicken Invaders",
-    Description: "Fun shooting game\nImplemented on java\nDesign pattern - MVC",
+    Description: "Fun shooting game\nImplemented in java\nDesign pattern - MVC",
     URL: "https://github.com/florianKProjects/chicken-invaders-swing",
     Image_url:
       "url(https://m.media-amazon.com/images/M/MV5BMzIyMDgwZDktNGVjMi00MDc1LWFiNzYtMTU1NDU2NGM3NjA3XkEyXkFqcGdeQXVyMjkzNDQzNDk@._V1_.jpg)",
