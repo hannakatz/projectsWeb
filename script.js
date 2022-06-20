@@ -18,7 +18,7 @@ const data = [
   },
   {
     Title: "NetWork Project",
-    Description: "TCP Server written on java\nMultithreading",
+    Description: "TCP Server written in java\nMultithreading",
     URL: "https://github.com/hannakatz/HITNetworkProject.git",
     Image_url:
       "url(https://media.springernature.com/w580h326/nature-cms/uploads/collections/Networks-Collection-img-final-f2c265a59e457f48645e2aa3ff90e942.jpg)",
@@ -35,8 +35,7 @@ const data = [
   },
   {
     Title: "Chicken Invaders",
-    Description:
-      "Defining requirements, planning, implementation and testing\nImplemented on java\nDesign pattern - MVC",
+    Description: "Fun shooting game\nImplemented on java\nDesign pattern - MVC",
     URL: "https://github.com/florianKProjects/chicken-invaders-swing",
     Image_url:
       "url(https://m.media-amazon.com/images/M/MV5BMzIyMDgwZDktNGVjMi00MDc1LWFiNzYtMTU1NDU2NGM3NjA3XkEyXkFqcGdeQXVyMjkzNDQzNDk@._V1_.jpg)",
